@@ -4,7 +4,7 @@ _confweb
 This is a repository for easily creating conferences. To create your own conference create a repo in your username with your confname then type.
 
 ```
-$ git clone --bare https://github.com/sods/_confweb.git
+$ git clone --bare https://github.com/gpschool/_confweb.git
 $ cd _confweb.git
 $ git push --mirror https://github.com/USERNAME/CONFNAME.git
 $ cd ..
