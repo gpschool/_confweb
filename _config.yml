@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/_confweb" # the subpath of your site, e.g. /blog/
-url: "https://gpss.cc" # the base hostname & protocol for your site
+url: "https://website.url" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  gpschool
 plugins:
@@ -22,16 +22,9 @@ youtube:
 
 ghub:
   edit: true
-  repository: gpss17
-
-
-youtube:
-  height: 315
-  width: 560
-
-github:
-  edit: true
   repository: _confweb
+
+
   
 markdown: kramdown
 
@@ -53,7 +46,9 @@ conference:
   draft: true # set to True if the programme is draft only.
   hide_tentative: true
   hosts:
-  
+
+  short_name: CLN # Short name for conference (e.g. AISTATS)
+  full_name: Conference Long Name # (e.g. Conference on Artificial Intelligence and Statitics)
   room: Room
   venue: Convention Centre
   location: City, Country
@@ -63,32 +58,14 @@ conference:
   dates:
   - 2017-09-12
   - 2017-09-13
-  hosts:
-  general:
-  - family: Jones
-    given: Jack
-    url: "http://jackjones.org"
-  - family: Bloggs
-    given: Bill
-    url: "http://billblogs.org"
-  workshop:
-  - family:
-    given:
-    url:
-    institute:
-  symposium:
-  - family:
-    given:
-    url:
-    institute:
-  local:
-  - family:
-    given:
-    url:
-    institute:
+  chairs:
+  - type: Organizers
+    people:
+    - {given: Jack, family: Jones, url: "http://jackjones.org", institute: Jack Institute}
+    - {given: Betty, family: Bloggs, url: "http://bettyblogs.org", institute: Betty Institute}
   sponsors:
-  - name:
-    url:
+  - name: Sponsor Name
+    url: Sponsor URL
 previous_meeting:
   name:
   url:
